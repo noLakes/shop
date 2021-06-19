@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 function Nav() {
   return (
     <div className='nav-container'>
-      <Link to="/">Products</Link>
-      <Link to="/">Cart</Link>
+      <Link to="/">Home</Link>
+      <Link to="/products">Products</Link>
+      <Link to="/cart">Cart</Link>
     </div>
   )
 }

@@ -1,20 +1,19 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Cart from './Components/Cart'
 import Nav from './Components/Nav'
+import Products from './Components/Products'
 
 function App() {
 
   return (
-    <Router>
-      <div className='main-container'>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={App} />
-          <Route path="/cart" component={Cart} />
-        </Switch>
-      </div>
-    </Router>
+    <div className='main-container'>
+      <Nav />
+      <Switch>
+        <Route path='/products' component={Products}/>
+        <Route path='/cart' component={Cart}/>
+      </Switch>
+    </div>
   )
 }
 
