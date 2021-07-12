@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+//imageSRCstyle: <img src={card.image_uris.normal} alt="card-art"></img>
+
 function Card(props) {
   const card = props.card
 
@@ -7,7 +9,7 @@ function Card(props) {
     <div 
       className='card-product-container'
     >
-      <img src={card.image_uris.normal} alt="card-art"></img>
+      
       <h3>{card.id}</h3>
       <h3>{card.name}</h3>
     </div>
